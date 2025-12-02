@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vip Limo Luxor - Изберете Луксуз</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for high-quality visuals -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for the luxury theme and font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* Deep dark background */
+            color: #e5e5e5; /* Light grey text */
+        }
+        .luxury-text {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom gold gradient for accents */
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #B8860B 100%);
+        }
+        /* Style for the CTA button to stand out */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="bg-black/90 sticky top-0 z-10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold luxury-text text-yellow-400 tracking-wider">
+                Vip Limo Luxor
+            </h1>
+            <nav class="space-x-4 text-sm font-semibold hidden sm:flex">
+                <a href="#services" class="hover:text-yellow-400 transition duration-300">Услуги</a>
+                <a href="#features" class="hover:text-yellow-400 transition duration-300">Опрема</a>
+                <a href="#contact" class="px-3 py-1 rounded-full bg-gold-gradient text-black cta-button">Контактирај не</a>
+            </nav>
+            <!-- Mobile Menu Placeholder -->
+            <div class="sm:hidden">
+                <a href="#contact" class="px-3 py-1 rounded-full bg-gold-gradient text-black cta-button text-sm font-semibold">Контакти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[85vh] flex items-center justify-center bg-cover bg-center" 
+                 style="background-image: url('https://placehold.co/1920x1080/1c1917/FFD700?text=VIP+LIMOUSINE+LUXOR');">
+            <!-- Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black/70"></div> 
+            
+            <div class="relative text-center max-w-4xl px-6">
+                <h2 class="text-5xl md:text-7xl font-extrabold luxury-text text-white mb-4 tracking-tight">
+                    БИДИ ВИП
+                </h2>
+                <p class="text-xl md:text-2xl text-yellow-400 mb-8 font-light">
+                    ВИП ЛИМУЗИНА ИЗНАЈМУВАЊЕ - За Настан што се Памети.
+                </p>
+                <a href="#contact" class="cta-button inline-block px-10 py-4 text-lg font-bold rounded-full bg-gold-gradient text-black uppercase shadow-xl transition duration-300">
+                    ПРОВЕРЕТЕ ДОСТАПНОСТ СЕГА
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-[#151515]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl luxury-text text-center text-yellow-400 mb-12">Нашите Ексклузивни Услуги</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Service Card -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border-b-4 border-yellow-400 hover:shadow-yellow-500/30 transition duration-300">
+                        <i data-lucide="heart-handshake" class="w-8 h-8 text-yellow-400 mb-3"></i>
+                        <h4 class="text-xl font-semibold mb-2 luxury-text text-white">СВАДБА</h4>
+                        <p class="text-gray-400">За вашата свадба Vip Limo Luxor Ви предлага изнајмување на луксузна лимузина за да ви го направи свадбениот ден незаборавен и единствен.</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border-b-4 border-yellow-400 hover:shadow-yellow-500/30 transition duration-300">
+                        <i data-lucide="cake" class="w-8 h-8 text-yellow-400 mb-3"></i>
+                        <h4 class="text-xl font-semibold mb-2 luxury-text text-white">РОДЕНДЕН</h4>
+                        <p class="text-gray-400">Направете му големо изненадување на славеникот со забава во луксузната лимузина и нека овој роденден биде поинаков од другите.</p>
+                    </div>
+                    
+                    <!-- Service Card -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border-b-4 border-yellow-400 hover:shadow-yellow-500/30 transition duration-300">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-yellow-400 mb-3"></i>
+                        <h4 class="text-xl font-semibold mb-2 luxury-text text-white">МАТУРСКА ВЕЧЕР</h4>
+                        <p class="text-gray-400">Вашето доаѓање на матурската прослава нека го забележи цел град и долго нека се прераскажува. Затоа што вашето друштво е главно.</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border-b-4 border-yellow-400 hover:shadow-yellow-500/30 transition duration-300">
+                        <i data-lucide="baby" class="w-8 h-8 text-yellow-400 mb-3"></i>
+                        <h4 class="text-xl font-semibold mb-2 luxury-text text-white">КРШТЕВКА ИЛИ СУНЕТ</h4>
+                        <p class="text-gray-400">Овој важен ден за вашите најмили нека биде луксузен со возењето со нашата лимузина, затоа што тие го заслужуваат тоа.</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border-b-4 border-yellow-400 hover:shadow-yellow-500/30 transition duration-300">
+                        <i data-lucide="users" class="w-8 h-8 text-yellow-400 mb-3"></i>
+                        <h4 class="text-xl font-semibold mb-2 luxury-text text-white">МОМИНСКА И ЕРГЕНСКА ВЕЧЕР</h4>
+                        <p class="text-gray-400">Нека оваа вечер биде посебна и таква нека остане во вашите спомени, со Вип лимузината за Вип друштво.</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl border-b-4 border-yellow-400 hover:shadow-yellow-500/30 transition duration-300">
+                        <i data-lucide="briefcase" class="w-8 h-8 text-yellow-400 mb-3"></i>
+                        <h4 class="text-xl font-semibold mb-2 luxury-text text-white">ВИП ДЕЛОВНО ВОЗЕЊЕ</h4>
+                        <p class="text-gray-400">Ви нудиме Вип деловни возења: Семинари, состаноци, работилници, посета на саеми, конференции, екскурзии, посета на винарии и друго.</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="lg:col-span-3 md:col-span-2">
+                        <div class="bg-yellow-400/10 p-6 rounded-xl shadow-2xl border border-yellow-400 flex items-center">
+                            <i data-lucide="plane" class="w-10 h-10 text-yellow-400 mr-4 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="text-2xl font-semibold mb-1 luxury-text text-yellow-400">ТРАНСФЕР ДО И ОД СИТЕ АЕРОДРОМИ</h4>
+                                <p class="text-gray-300">Организирајте Вип пречек на вашите бизнис партнери или вашите најблиски од сите аеродроми, со капацитет до **19 седишта**.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Limo Features Section -->
+        <section id="features" class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl luxury-text text-center text-yellow-400 mb-12">Опрема на Лимузината</h3>
+                <p class="text-center text-lg max-w-2xl mx-auto mb-10 text-gray-400">Лимузината е опремена со врвни карактеристики за да обезбеди незаменлив комфор и луксуз за секое патување.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Feature 1 -->
+                    <div class="flex items-start bg-gray-800 p-6 rounded-lg">
+                        <i data-lucide="sofa" class="w-6 h-6 text-yellow-400 mt-1 flex-shrink-0"></i>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white">Кожен Ентериер</h4>
+                            <p class="text-sm text-gray-400">Кожен ентериер кој му дава посебен комфор и луксуз.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-start bg-gray-800 p-6 rounded-lg">
+                        <i data-lucide="fan" class="w-6 h-6 text-yellow-400 mt-1 flex-shrink-0"></i>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white">Двозонски Климатроник</h4>
+                            <p class="text-sm text-gray-400">Двозонски климатроник кој се контролира од страна на патниците.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-start bg-gray-800 p-6 rounded-lg">
+                        <i data-lucide="glass-water" class="w-6 h-6 text-yellow-400 mt-1 flex-shrink-0"></i>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white">Бар</h4>
+                            <p class="text-sm text-gray-400">Бар за вашиот пијалок да биде ладен.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 (Combined Disco Features) -->
+                    <div class="flex items-start bg-gray-800 p-6 rounded-lg">
+                        <i data-lucide="sparkles" class="w-6 h-6 text-yellow-400 mt-1 flex-shrink-0"></i>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white">Диско Осветлување</h4>
+                            <p class="text-sm text-gray-400">Строб светло, ласер, Ѕвездено небо, Лед стаклен под, Машина за диско чад.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature 5 -->
+                    <div class="flex items-start bg-gray-800 p-6 rounded-lg">
+                        <i data-lucide="monitor" class="w-6 h-6 text-yellow-400 mt-1 flex-shrink-0"></i>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-white">Мултимедиа</h4>
+                            <p class="text-sm text-gray-400">ДВД плеер, 3 ЛЕД телевизори, сараунд 8 канален систем за јак звук, музика по ваш избор.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 (The Closing Promise) -->
+                    <div class="flex items-start bg-gray-800 p-6 rounded-lg lg:col-span-3 sm:col-span-2 justify-center text-center">
+                        <p class="text-xl luxury-text text-yellow-400">Со Vip Limo Luxor, секое патување е настан.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-black">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-4xl luxury-text text-yellow-400 mb-8">Контактирајте нè</h3>
+                <p class="text-xl text-gray-300 mb-12">Јавете се директно за да ја проверите достапноста за вашиот датум.</p>
+
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 max-w-3xl mx-auto">
+                    
+                    <!-- Phone Contact Card -->
+                    <div class="bg-gray-800 p-8 rounded-xl w-full md:w-1/2 border border-yellow-400">
+                        <i data-lucide="phone" class="w-10 h-10 text-yellow-400 mx-auto mb-4"></i>
+                        <h4 class="text-2xl font-bold luxury-text text-white mb-2">Јавете се</h4>
+                        <a href="tel:+38975347777" class="text-3xl font-extrabold text-yellow-400 hover:text-white transition duration-300">
+                            +389 75 347 777
+                        </a>
+                    </div>
+                    
+                    <!-- Location Contact Card -->
+                    <div class="bg-gray-800 p-8 rounded-xl w-full md:w-1/2 border border-yellow-400">
+                        <i data-lucide="map-pin" class="w-10 h-10 text-yellow-400 mx-auto mb-4"></i>
+                        <h4 class="text-2xl font-bold luxury-text text-white mb-2">Нашата Локација</h4>
+                        <p class="text-lg text-gray-300">ул. Вангел Мајорот бр.9, Битола, Македонија</p>
+                        <a href="https://maps.google.com/?q=ул.+Вангел+Мајорот+бр.9,+Битола" target="_blank" class="text-sm text-yellow-400 hover:text-white transition duration-300 mt-2 inline-block">(Отвори на Мапа)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/90 text-center py-6 border-t border-gray-700/50">
+        <p class="text-sm text-gray-500">
+            © 2024 Vip Limo Luxor. Сите права задржани.
+        </p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
